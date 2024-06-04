@@ -1,4 +1,3 @@
-// src/components/Header.js
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import TopBar from "./TopBar";
@@ -17,7 +16,7 @@ const Header = () => {
   return (
     <>
       <TopBar />
-      <header className="bg-white dark:bg-black text-black dark:text-white p-4 shadow-md">
+      <header className="bg-white dark:bg-gray-800 text-black dark:text-white p-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <img
@@ -29,31 +28,31 @@ const Header = () => {
           <nav className="hidden lg:flex gap-x-4 items-center">
             <Link
               to="/"
-              className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200"
+              className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200 hover:scale-105 transition-transform duration-200"
             >
               Trang chủ
             </Link>
             <Link
               to="/courses"
-              className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200"
+              className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200 hover:scale-105 transition-transform duration-200"
             >
               Ngành học
             </Link>
             <Link
               to="/short-courses"
-              className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200"
+              className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200 hover:scale-105 transition-transform duration-200"
             >
               Khóa ngắn hạn
             </Link>
             <Link
               to="/register"
-              className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200"
+              className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200 hover:scale-105 transition-transform duration-200"
             >
               Đăng ký ngay
             </Link>
             <Link
               to="/dashboard"
-              className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200"
+              className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200 hover:scale-105 transition-transform duration-200"
             >
               Dashboard
             </Link>
@@ -79,35 +78,35 @@ const Header = () => {
         >
           <Link
             to="/"
-            className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200"
+            className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200 hover:scale-105 transition-transform duration-200"
             onClick={() => setShowMobileNavbar(false)}
           >
             Trang chủ
           </Link>
           <Link
             to="/courses"
-            className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200"
+            className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200 hover:scale-105 transition-transform duration-200"
             onClick={() => setShowMobileNavbar(false)}
           >
             Ngành học
           </Link>
           <Link
             to="/short-courses"
-            className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200"
+            className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200 hover:scale-105 transition-transform duration-200"
             onClick={() => setShowMobileNavbar(false)}
           >
             Khóa ngắn hạn
           </Link>
           <Link
             to="/register"
-            className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200"
+            className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200 hover:scale-105 transition-transform duration-200"
             onClick={() => setShowMobileNavbar(false)}
           >
             Đăng ký ngay
           </Link>
           <Link
             to="/dashboard"
-            className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200"
+            className="text-xl font-semibold hover:text-gray-600 dark:hover:text-gray-200 hover:scale-105 transition-transform duration-200"
             onClick={() => setShowMobileNavbar(false)}
           >
             Dashboard
