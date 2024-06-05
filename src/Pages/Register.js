@@ -6,7 +6,10 @@ const Register = () => {
   return (
     <div
       className="register min-h-screen w-full bg-cover bg-center flex flex-col items-center justify-center"
-      style={{ backgroundImage: "url(/backgrounddk.png)" }}
+      style={{
+        backgroundImage:
+          "url(https://w.ladicdn.com/s1850x1300/61a046d06f6075006912857e/background-1-20240203053720-i8xgx.png)",
+      }}
     >
       {/* Main content */}
       <main className="flex flex-col items-center w-full flex-1 p-5">

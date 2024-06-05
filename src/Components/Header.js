@@ -20,7 +20,7 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <img
-              src="/logo.png"
+              src="https://w.ladicdn.com/s550x350/61a046d06f6075006912857e/logo-ispace-20240114053146-ygln9.png"
               alt="Logo"
               className="h-12 md:h-16 lg:h-12 xl:h-24 mr-3"
             />

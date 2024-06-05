@@ -11,7 +11,7 @@ const ShortCourse = () => {
       <div className="flex flex-wrap dark:bg-slate-600 dark:text-white justify-center p-8">
         <div className="course bg-white border dark:bg-slate-500 dark:text-white border-gray-200 rounded-lg m-8 p-6 w-full md:w-1/3 lg:w-1/4 shadow-lg text-center">
           <img
-            src="aws.jpg"
+            src="https://ispace.edu.vn/wp-content/uploads/2023/08/Group-62-768x568.jpg"
             alt="AWS Course"
             className="w-48 h-48 object-cover mx-auto mb-6 mt-6"
           />
@@ -31,7 +31,7 @@ const ShortCourse = () => {
         </div>
         <div className="course bg-white border dark:bg-slate-500 dark:text-white border-gray-200 rounded-lg m-8 p-6 w-full md:w-1/3 lg:w-1/4 shadow-lg text-center">
           <img
-            src="ceh.jpg"
+            src="https://ispace.edu.vn/wp-content/uploads/2023/09/Group-91-768x665.jpg"
             alt="CEH Course"
             className="w-48 h-48 object-cover mx-auto mb-6 mt-6"
           />

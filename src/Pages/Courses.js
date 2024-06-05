@@ -17,7 +17,7 @@ const Course = () => {
         <div className="flex flex-wrap justify-center gap-8">
           <div className="w-full md:w-1/3 bg-white dark:bg-slate-500 p-4 rounded-lg shadow-lg">
             <img
-              src="nganh2.jpg"
+              src="https://admin.yersin.edu.vn//Uploads/images/nen-hoc-ky-thuat-phan-mem-hay-cong-nghe-thong-tin-1.jpg"
               alt="Phát triển phần mềm"
               className="w-full h-48 object-cover rounded-t-lg"
             />
@@ -42,7 +42,7 @@ const Course = () => {
 
           <div className="w-full md:w-1/3 bg-white dark:bg-slate-500 p-4 rounded-lg shadow-lg">
             <img
-              src="nganh4.jpg"
+              src="https://huflit.edu.vn/wp-content/uploads/2023/05/1-4.png"
               alt="Thương mại điện tử"
               className="w-full h-48 object-cover rounded-t-lg"
             />
@@ -67,7 +67,7 @@ const Course = () => {
 
           <div className="w-full md:w-1/3 bg-white dark:bg-slate-500 p-4 rounded-lg shadow-lg">
             <img
-              src="nganh5.jpg"
+              src="https://cmcts.com.vn/media/data/users/SEO_phase_2/SEOMD/quan-ly-trai-nghiem-khach-hang-cxm/quan-tri-he-thong-mang_%281%29.jpg"
               alt="Quản trị mạng"
               className="w-full h-48 object-cover rounded-t-lg"
             />
@@ -92,8 +92,8 @@ const Course = () => {
 
           <div className="w-full md:w-1/3 bg-white dark:bg-slate-500 p-4 rounded-lg shadow-lg">
             <img
-              src="nganh3.jpg"
-              alt="Quản trị mạng"
+              src="https://d35y3h46sw2vsm.cloudfront.net/w/wp-content/uploads/2023/06/Graphic-Design.jpg"
+              alt="Thiết kế đồ họa"
               className="w-full h-48 object-cover rounded-t-lg"
             />
             <h3 className="text-xl font-bold text-orange-600 mt-4">
@@ -118,7 +118,7 @@ const Course = () => {
 
           <div className="w-full md:w-1/3 bg-white dark:bg-slate-500 p-4 rounded-lg shadow-lg">
             <img
-              src="nganh1.jpg"
+              src="https://file3.qdnd.vn/data/images/0/2023/06/13/tominhngoc/baiphu21140831pm.png?dpi=150&quality=100&w=870"
               alt="Quản trị mạng"
               className="w-full h-48 object-cover rounded-t-lg"
             />

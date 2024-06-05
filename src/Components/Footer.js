@@ -14,7 +14,11 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-start gap-8">
           <div className="text-center md:text-left md:w-1/3 mb-4 md:mb-0">
-            <img src="logo.png" alt="Logo" className="mx-auto md:mx-0 mb-2" />
+            <img
+              src="https://w.ladicdn.com/s550x350/61a046d06f6075006912857e/logo-ispace-20240114053146-ygln9.png"
+              alt="Logo"
+              className="mx-auto md:mx-0 mb-2"
+            />
             <p>
               eLearning là giải pháp giúp người học phá bỏ rào cản về không gian
               thời gian.

@@ -36,11 +36,17 @@ const Home = () => {
   return (
     <div
       className="home min-h-screen w-full bg-cover bg-center  flex-col items-center justify-center"
-      style={{ backgroundImage: "url(/background.png)" }}
+      style={{
+        backgroundImage:
+          "url(https://w.ladicdn.com/s1850x1300/61a046d06f6075006912857e/background-1-20240203053720-i8xgx.png)",
+      }}
     >
       <main
         className="container mx-auto flex flex-col items`-center justify-center min-h-screen w-full bg-cover bg-center"
-        style={{ backgroundImage: "url(/background.png)" }}
+        style={{
+          backgroundImage:
+            "url(https://w.ladicdn.com/s1850x1300/61a046d06f6075006912857e/background-1-20240203053720-i8xgx.png)",
+        }}
       >
         <div className="text-center mt-8">
           <h2 className="text-4xl font-bold text-red-500">TUYỂN SINH 2024</h2>
@@ -51,12 +57,16 @@ const Home = () => {
             (09 iphone 15 pro dành tặng cho 09 bạn có điểm cao nhất mỗi đợt xét
             tuyển)
           </p>
-          <img src="/iphone.png" alt="iPhone 15 Pro" className="w-48 mt-4" />
+          <img
+            src="https://w.ladicdn.com/s550x550/61a046d06f6075006912857e/natural-iphone-15-pro-sku-header-120923-20240206060205-g-nx4.png"
+            alt="iPhone 15 Pro"
+            className="w-48 mt-4"
+          />
         </div>
         <div className="mt-8 flex flex-wrap justify-center items-center w-full max-w-6xl">
           <div className="w-full md:w-1/2 p-4">
             <img
-              src="/group-photo.jpg"
+              src="https://w.ladicdn.com/s900x700/61a046d06f6075006912857e/6-20221012083142-vs4i2.jpg"
               alt="Group of students"
               className="w-full border-4 border-orange-500"
             />
@@ -131,7 +141,7 @@ const Home = () => {
             <div className="w-full lg:w-1/2 p-4">
               <div className="relative">
                 <img
-                  src="/group-photo.jpg"
+                  src="https://ispace.edu.vn/wp-content/uploads/2024/01/DSCF9681-768x512.jpg"
                   alt="Group of students"
                   className="w-full rounded-lg shadow-lg"
                 />
@@ -272,7 +282,7 @@ const Home = () => {
           <div class="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6">
             <div class="bg-white  dark:bg-slate-600 dark:text-white shadow-md overflow-hidden mb-8">
               <img
-                src="gv1.jpg"
+                src="https://ispace.edu.vn/wp-content/uploads/2024/01/format-giang-vien-edit-option-2-10-730x1024.png"
                 alt="Uploaded Graphic"
                 class="w-auto h-auto rounded-full mx-auto mt-4"
               />
@@ -307,7 +317,7 @@ const Home = () => {
             </div>
             <div class="bg-white  dark:bg-slate-600 shadow-md overflow-hidden mb-8">
               <img
-                src="gv2.jpg"
+                src="https://ispace.edu.vn/wp-content/uploads/2024/01/format-giang-vien-edit-option-2-11-730x1024.png"
                 alt="Uploaded Graphic"
                 class="w-auto h-auto rounded-full mx-auto mt-4"
               />
@@ -342,16 +352,16 @@ const Home = () => {
             </div>
             <div class="bg-white  dark:bg-slate-600 shadow-md overflow-hidden mb-8">
               <img
-                src="gv3.jpg"
+                src="https://ispace.edu.vn/wp-content/uploads/2024/01/format-giang-vien-edit-option-2-12-730x1024.png"
                 alt="Uploaded Graphic"
                 class="w-auto h-auto rounded-full mx-auto mt-4"
               />
               <div class="p-4">
                 <p class="text-gray-700  dark:text-white text-center">
-                  Hồ Nguyễn Khánh Duy
+                  Thương Phạm Hoài Thương
                 </p>
                 <p class="text-gray-700  dark:text-white text-center">
-                  Ths. Phó Khoa An Ninh Mạng
+                  Giảng viên Khoa An Ninh Mạng
                 </p>
                 <div class="flex justify-center">
                   <a
@@ -377,7 +387,7 @@ const Home = () => {
             </div>
             <div class="bg-white  dark:bg-slate-600 shadow-md overflow-hidden mb-8">
               <img
-                src="gv4.jpg"
+                src="https://ispace.edu.vn/wp-content/uploads/2021/11/NguyenThePhuong_GV.png"
                 alt="Uploaded Graphic"
                 class="w-auto h-auto rounded-full mx-auto mt-4"
               />
