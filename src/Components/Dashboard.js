@@ -106,34 +106,42 @@ export default function Dashboard() {
 
   return (
     <div className="p-6 dark:bg-gray-600 dark:text-white">
-      <div className="grid grid-cols-2 gap-6">
-        <div className="bg-white w-[400px]">
-          <BarChart></BarChart>
-        </div>
-        <div>
-          <h1>Danh sách nhập học</h1>
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Telephone</th>
-                <th>Course</th>
-                <th>Birthdate</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((row, index) => (
-                <tr key={index}>
-                  <td>{row[0]}</td>
-                  <td>{row[1]}</td>
-                  <td>{row[2]}</td>
-                  <td>{row[3]}</td>
-                  <td>{row[4]}</td>
+      <div className="flex justify-center">
+        <div className="w-full md:w-3/4 lg:w-1/2">
+          <h1 className="text-2xl font-semibold mb-4 text-center">
+            Danh sách nhập học
+          </h1>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white dark:bg-gray-700">
+              <thead>
+                <tr className="w-full bg-gray-200 dark:bg-gray-800">
+                  <th className="py-2 px-4 text-left">Name</th>
+                  <th className="py-2 px-4 text-left">Email</th>
+                  <th className="py-2 px-4 text-left">Telephone</th>
+                  <th className="py-2 px-4 text-left">Course</th>
+                  <th className="py-2 px-4 text-left">Birthdate</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {data.map((row, index) => (
+                  <tr
+                    key={index}
+                    className={`w-full ${
+                      index % 2 === 0
+                        ? "bg-gray-100 dark:bg-gray-600"
+                        : "bg-white dark:bg-gray-700"
+                    }`}
+                  >
+                    <td className="py-2 px-4">{row[0]}</td>
+                    <td className="py-2 px-4">{row[1]}</td>
+                    <td className="py-2 px-4">{row[2]}</td>
+                    <td className="py-2 px-4">{row[3]}</td>
+                    <td className="py-2 px-4">{row[4]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

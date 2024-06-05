@@ -55,14 +55,14 @@ const Footer = () => {
             <h4 className="font-bold mb-2">TRANG XÃ HỘI</h4>
             <div className="flex justify-center md:justify-start space-x-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/ispace.vn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faFacebook} className="w-6 h-6" />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/user/ispacechannel"
                 target="_blank"
                 rel="noopener noreferrer"
               >
