@@ -15,30 +15,27 @@ import React from "react";
 const queryClient = new QueryClient();
 
 function App() {
-    return (
-        <QueryClientProvider client={queryClient}>
-            <Router>
-                <div className="App">
-                    <Header />
-                    <div>
-                        <Routes>
-                            <Route exact path="/" element={<Home />} />
-                            <Route path="/courses" element={<Courses />} />
-                            <Route
-                                path="/short-courses"
-                                element={<ShortCourses />}
-                            />
-                            <Route path="/register" element={<Register />} />
-                            <Route path="/dashboard" element={<Dashboard />} />
-                            <Route path="*" element={<NotFound />} />
-                        </Routes>
-                    </div>
-                    <Footer />
-                </div>
-            </Router>
-            <ReactQueryDevtools initialIsOpen={false} />
-        </QueryClientProvider>
-    );
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Router>
+        <div className="App">
+          <Header />
+          <div>
+            <Routes basename={process.env.REACT_APP_ROUTER_BASE_NAME}>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/courses" element={<Courses />} />
+              <Route path="/short-courses" element={<ShortCourses />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      </Router>
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
+  );
 }
 
 export default App;

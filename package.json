@@ -1,8 +1,8 @@
 {
   "name": "admissions-website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "homepage": "https://Tung10022001.github.io",
+  "homepage": "https://Tung10022001.github.io/ReactApp",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
