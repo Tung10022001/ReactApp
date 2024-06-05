@@ -17,11 +17,11 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Router>
+      <Router basename={process.env.REACT_APP_ROUTER_BASE_NAME}>
         <div className="App">
           <Header />
           <div>
-            <Routes basename={process.env.REACT_APP_ROUTER_BASE_NAME}>
+            <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/courses" element={<Courses />} />
               <Route path="/short-courses" element={<ShortCourses />} />
