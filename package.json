@@ -19,6 +19,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
     "chart.js": "^4.4.3",
+    "chartjs-plugin-datalabels": "^2.2.0",
     "gapi-script": "^1.2.0",
     "google-api-client": "^2.1.0",
     "jsrsasign": "^11.1.0",

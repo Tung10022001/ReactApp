@@ -20,6 +20,7 @@ const SheetsForm = () => {
     [formKey.course]: "",
     [formKey.birth]: "",
   });
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     const initClient = () => {
@@ -110,7 +111,6 @@ const SheetsForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    console.log("in in in");
     e.preventDefault();
 
     try {
@@ -130,9 +130,17 @@ const SheetsForm = () => {
           ],
         },
       });
-      console.log(response);
+
       if (response.status === 200) {
         setMessage("Data submitted successfully");
+        // Reset form fields
+        setInputData({
+          [formKey.name]: "",
+          [formKey.email]: "",
+          [formKey.tel]: "",
+          [formKey.course]: "",
+          [formKey.birth]: "",
+        });
       } else {
         setMessage("Error submitting data");
       }
@@ -140,10 +148,6 @@ const SheetsForm = () => {
       console.error("Error writing to spreadsheet:", error);
       setMessage("Error submitting data");
     }
-  };
-
-  const setMessage = (message) => {
-    console.log(message);
   };
 
   return (
@@ -154,6 +158,7 @@ const SheetsForm = () => {
           placeholder="Họ và tên"
           className="w-full p-2 rounded-md text-black"
           name={formKey.name}
+          value={inputData[formKey.name]}
           onChange={handleInputChange}
         />
         <input
@@ -161,6 +166,7 @@ const SheetsForm = () => {
           placeholder="Email"
           className="w-full p-2 rounded-md text-black"
           name={formKey.email}
+          value={inputData[formKey.email]}
           onChange={handleInputChange}
         />
         <input
@@ -168,27 +174,30 @@ const SheetsForm = () => {
           placeholder="Số điện thoại"
           className="w-full p-2 rounded-md text-black"
           name={formKey.tel}
+          value={inputData[formKey.tel]}
           onChange={handleInputChange}
         />
         <select
           className="w-full p-2 rounded-md text-black"
           name={formKey.course}
+          value={inputData[formKey.course]}
           onChange={handleInputChange}
         >
-          <option>Ngành đào tạo</option>
-          <option>An ninh mạng</option>
-          <option>Lập trình máy tính</option>
-          <option>Thiết kế đồ họa</option>
-          <option>Thương mại điện tử</option>
-          <option>Quản trị mạng</option>
-          <option>CEH</option>
-          <option>AWS</option>
+          <option value="">Ngành đào tạo</option>
+          <option value="An ninh mạng">An ninh mạng</option>
+          <option value="Lập trình máy tính">Lập trình máy tính</option>
+          <option value="Thiết kế đồ họa">Thiết kế đồ họa</option>
+          <option value="Thương mại điện tử">Thương mại điện tử</option>
+          <option value="Quản trị mạng">Quản trị mạng</option>
+          <option value="CEH">CEH</option>
+          <option value="AWS">AWS</option>
         </select>
         <input
           type="date"
           placeholder="Ngày tháng năm sinh"
           className="w-full p-2 rounded-md text-black"
           name={formKey.birth}
+          value={inputData[formKey.birth]}
           onChange={handleInputChange}
         />
         <button
@@ -197,6 +206,7 @@ const SheetsForm = () => {
         >
           Đăng ký
         </button>
+        {message && <p className="mt-4 text-center">{message}</p>}
       </form>
     </div>
   );
