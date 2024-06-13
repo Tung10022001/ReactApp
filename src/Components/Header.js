@@ -53,7 +53,7 @@ const Header = () => {
               onMouseEnter={() => handleMouseEnter("courses")}
               onMouseLeave={() => handleMouseLeave("courses")}
             >
-              <span className="cursor-pointer">Ngành học ▼</span>
+              <span className="cursor-pointer ">Ngành học ▼</span>
               {showDropdown.courses && (
                 <ul className="absolute bg-white dark:bg-gray-700 text-black dark:text-white shadow-lg rounded mt-2 w-48">
                   <li>

@@ -17,7 +17,9 @@ function Carousel() {
         />
         <span className="bg-opacity-50 "></span>
         <div className="container">
-          <h1 className="text-white p-20 text-2xl">KHÓA HỌC CEH</h1>
+          <h1 className="text-black p-20 text-4xl font-bold text-center dark:text-white">
+            KHÓA HỌC CEH
+          </h1>
         </div>
       </div>
       <div
