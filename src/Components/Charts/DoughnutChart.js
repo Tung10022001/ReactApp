@@ -1,14 +1,19 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
 import "chart.js/auto";
+import ChartDataLabels from "chartjs-plugin-datalabels";
+
+import { Chart } from "chart.js";
+Chart.register(ChartDataLabels);
 
 const DoughnutChart = ({ data }) => {
+  const total = Object.values(data).reduce((sum, value) => sum + value, 0);
   const chartData = {
     labels: Object.keys(data),
     datasets: [
       {
         label: "Course Registrations",
-        data: Object.values(data),
+        data: Object.values(data).map((value) => (value / total) * 100),
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
           "rgba(54, 162, 235, 0.2)",
@@ -29,10 +34,25 @@ const DoughnutChart = ({ data }) => {
       },
     ],
   };
+  const options = {
+    plugins: {
+      datalabels: {
+        formatter: (value) => value.toFixed(1) + "%",
+        color: "#000",
+        anchor: "end",
+        align: "start",
+        offset: 50,
+        font: {
+          weight: "bold",
+          size: 16,
+        },
+      },
+    },
+  };
 
   return (
     <div className="">
-      <Doughnut data={chartData} />
+      <Doughnut data={chartData} options={options} />
     </div>
   );
 };

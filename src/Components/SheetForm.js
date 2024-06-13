@@ -132,7 +132,7 @@ const SheetsForm = () => {
       });
 
       if (response.status === 200) {
-        setMessage("Data submitted successfully");
+        setMessage("Đăng ký thành công");
         // Reset form fields
         setInputData({
           [formKey.name]: "",
