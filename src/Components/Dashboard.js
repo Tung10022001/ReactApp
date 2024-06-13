@@ -215,7 +215,7 @@ export default function Dashboard() {
             </table>
           </div>
           <div className="flex justify-center dark:text-white">
-            <div className="w-3/4 sm:w-1/2">
+            <div className="w-full sm:w-3/4 md:w-1/2">
               <DoughnutChart data={courseCounts} />
             </div>
           </div>

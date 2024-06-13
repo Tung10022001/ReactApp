@@ -34,14 +34,17 @@ const DoughnutChart = ({ data }) => {
       },
     ],
   };
+
   const options = {
+    responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       datalabels: {
         formatter: (value) => value.toFixed(1) + "%",
         color: "#000",
         anchor: "end",
         align: "start",
-        offset: 50,
+        offset: 40,
         font: {
           weight: "bold",
           size: 16,
@@ -51,7 +54,7 @@ const DoughnutChart = ({ data }) => {
   };
 
   return (
-    <div className="">
+    <div className="w-full h-96">
       <Doughnut data={chartData} options={options} />
     </div>
   );

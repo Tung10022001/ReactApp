@@ -5,6 +5,16 @@ function Carousel() {
   return (
     <div className="">
       <div className="img-ech dark:bg-slate-600 dark:text-white">
+        <img
+          fetchpriority="high"
+          decoding="async"
+          width="2400"
+          height="1042"
+          src="https://ispace.edu.vn/wp-content/uploads/2021/12/banner-1920x550-Template-scaled.jpeg"
+          className="attachment-full size-full wp-image-13979"
+          alt=""
+          sizes="(max-width: 2500px) 100vw, 2500px"
+        />
         <span className="bg-opacity-50"></span>
         <div className="container">
           <h1 className="text-white p-20 text-2xl">KHÓA HỌC AWS</h1>
